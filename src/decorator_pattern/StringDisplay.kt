@@ -1,4 +1,4 @@
-package Decorator
+package decorator_pattern
 
 class StringDisplay(private val string:String) : Display() {
 

@@ -1,4 +1,4 @@
-package Decorator
+package decorator_pattern
 
 class SideBorder(display: Display,private val borderChar:Char) : Border(display) {
 
