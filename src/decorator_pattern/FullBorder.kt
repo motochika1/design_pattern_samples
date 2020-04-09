@@ -9,7 +9,7 @@ class FullBorder(display: Display) : Border(display) {
     override fun getRowText(row: Int): String? = when(row){
         0 -> "+ ${makeLine('-',display.getColumns())} +"
         display.getRows() + 1 -> "+ ${makeLine('-',display.getColumns())} +"
-        else -> "¥ ${display.getRowText(row-1)} ¥"
+        else -> "${display.getRowText(row-1)}"
     }
 
 
